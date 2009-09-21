@@ -31,7 +31,6 @@ if (isset($_POST['to'])) {
 ?>
 <div style="padding: 10px;">
 <h2>Hi <fb:name firstnameonly="true" uid="<?=$user?>" useyou="false"/>!</h2><br/>
-<a href="<?= $facebook->get_add_url() ?>">Put Quotes in your profile</a>, if you haven't already.<!-- to be removed -->
 <form method="post" action="<?php echo $callbackurl; ?>">
 	<table border="0">
 	<tr><td>&quot;<input name="quote" id="quote" type="text" size="50">&quot;</td></tr>
